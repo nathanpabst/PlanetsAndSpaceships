@@ -27,7 +27,21 @@ namespace PlanetsAndSpaceships
             List<string> rockyPlanets = new List<string>();
             rockyPlanets = planetList.GetRange(0, 4);
 
+            //Remove() removes the first occurance of "Pluto" from the planetList
             planetList.Remove("Pluto");
+
+            Console.WriteLine("Our planets: ");
+            for (int i = 0; i < planetList.Count; i++)
+            {
+                Console.WriteLine(planetList[i]);
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("The rocky ones: ");
+            for (int i = 0; i < rockyPlanets.Count; i++)
+            {
+                Console.WriteLine(rockyPlanets[i]);
+            }
 
 
             Console.ReadLine();
