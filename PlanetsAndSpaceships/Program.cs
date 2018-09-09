@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PlanetsAndSpaceships
 {
@@ -6,7 +7,18 @@ namespace PlanetsAndSpaceships
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<string> planetList = new List<string>() { "Mercury", "Mars" };
+            planetList.Add("Jupiter");
+            planetList.Add("Saturn");
+
+            List<string> morePlanets = new List<string>() { "Uranus", "Neptune" };
+
+            planetList.AddRange(morePlanets);
+
+
+
+            Console.ReadLine();
+
         }
     }
 }
