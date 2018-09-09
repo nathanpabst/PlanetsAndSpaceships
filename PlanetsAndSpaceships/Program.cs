@@ -43,6 +43,26 @@ namespace PlanetsAndSpaceships
                 Console.WriteLine(rockyPlanets[i]);
             }
 
+            Console.WriteLine("");
+            Console.WriteLine("Successful satellite explorations: ");
+
+            var satelliteProbes = new Dictionary<string, string>
+            {
+                {"Mercury", "Mariner 10, Messenger, BepiColombo" },
+                {"Venus", "Mariner 2, Venera 4, Venera 8" },
+                {"Mars", "Mariner 4, Mars 2, Viking 1"},
+                {"Jupiter", "Pioneer 10, Ulysses, Juno" },
+                {"Saturn", "Pioneer 11, Voyager 1, Cassini" },
+                {"Uranus", "Voyager" },
+                {"Neptune", "Voyager 2" },
+                {"Earth", "Mars 2, Phobos 2, Rosetta" }
+            };
+
+            foreach (var i in satelliteProbes)
+            {
+                Console.WriteLine(i.Key + ": " + i.Value);
+            }
+
 
             Console.ReadLine();
 
